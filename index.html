@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftCart</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- DaisyUI & Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!----------------------- Navbar--------------- -->
+    <div>
+        <div class="navbar bg-base-100 shadow-sm">
+            <div class="navbar-start">
+                <a class="btn btn-ghost text-3xl font-bold text-purple-700">SwiftCart</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>Products</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a><i class="fa-solid fa-cart-shopping"></i></a>
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="-1"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        <li><a>Home</a></li>
+                        <li><a>Products</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------Hero Section------------ -->
+    <div>
+        <div class="hero min-h-screen" style="background-image: url('./Assets/banner-image.png');">
+            <div class="hero-overlay"></div>
+            <div class="hero-content text-neutral-content text-center">
+                <div class="md:max-w-md lg:max-w-lg">
+                    <h1 class="mb-5 text-5xl font-bold">Best Collection For You</h1>
+                    <p class="mb-5 text-3xl">
+                        Discover the latest trends in fashion, electronics, and more. Shop with
+                        confidence and style at SwiftCart.
+                    </p>
+                    <button class="btn btn-primary">Shop Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------Features----------------- -->
+    <div class="text-center py-12 bg-slate-200">
+        <h3 class="text-5xl font-bold mb-4 pt-6">Why Choose Us</h3>
+        <h5 class="text-3xl font-light">We Provide the best shopping experience with top-notch services.</h5>
+        <div class="flex justify-around py-8">
+            <div class="card bg-base-100 w-72 shadow-sm">
+                <div class="card-body">
+                    <i class="fa-solid fa-truck"></i>
+                    <h2 class="card-title">Fast Delivery</h2>
+                    <p class="text-left">A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                </div>
+            </div>
+            <div class="card bg-base-100 w-72 shadow-sm">
+                <div class="card-body">
+                    <i class="fa-solid fa-headphones"></i>
+                    <h2 class="card-title">24/7 Support</h2>
+                    <p class="text-left">A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                </div>
+            </div>
+            <div class="card bg-base-100 w-72 shadow-sm">
+                <div class="card-body">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <h2 class="card-title">Secure Payment</h2>
+                    <p class="text-left">A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------------- Footer-------------------- -->
+</body>
+
+</html>
